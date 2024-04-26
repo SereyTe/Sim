@@ -102,10 +102,12 @@ class SimpleDrivingEnv(gym.Env):
         self._envStepCounter = 0
 
         # Set the goal to a random target
-        x = (self.np_random.uniform(5, 9) if self.np_random.integers(2) else
-             self.np_random.uniform(-9, -5))
-        y = (self.np_random.uniform(5, 9) if self.np_random.integers(2) else
-             self.np_random.uniform(-9, -5))
+        #x = (self.np_random.uniform(5, 9) if self.np_random.integers(2) else
+             #self.np_random.uniform(-9, -5))
+        #y = (self.np_random.uniform(5, 9) if self.np_random.integers(2) else
+             #self.np_random.uniform(-9, -5))
+        x = 2
+        y = 2
         self.goal = (x, y)
         self.done = False
         self.reached_goal = False
